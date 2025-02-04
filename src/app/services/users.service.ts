@@ -6,7 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UsersService {
 
-    private apiUrl = "http://localhost:9000/usuarios"
+    // private apiUrl = "http://52.14.132.159:9000/usuarios" ESTO ES PARA AWS
+    private apiUrl = "http://137.184.33.89:9000/usuarios"
     private _httpClient = inject(HttpClient);
 
     postUser(fullName: string, email: string, password: string){
